@@ -34,6 +34,7 @@ public class Students {
             id1.printlist();
             id2.printlist();
             id3.printlist();
+            
 //        }
 //        String Studs[] = {id1.printlist, "id2", "id3"};
 //        System.out.println(Arrays.toString(Studs));

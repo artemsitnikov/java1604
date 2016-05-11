@@ -14,6 +14,7 @@ class Student extends Stud {
         super(n, s, f, b, a, p);
         uni = u;
     }
+    
     @Override
     void printlist() {
         System.out.println(name + sname + fname + birth + addr + phone + uni);
