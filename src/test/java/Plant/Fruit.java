@@ -22,8 +22,11 @@ public class Fruit extends Plant implements Peellable {
     }
     public static void main(String[] args) {
         Fruit apple = new Fruit(5.07, "red", true, true, false);
-        Fruit pear = new Fruit(8.11, "green", true, true, false);
+        //Fruit pear = new Fruit(8.11, "green", true, true, false);
         System.out.println("яблоко нечищенное весит " + apple.weight);
-        System.out.println("груша нечищенная весит " + pear.weight);
+        //System.out.println("груша нечищенная весит " + pear.weight);
+        Peellable.Peell();
+        
+        //System.out.println(peelledweight);
         
 }}

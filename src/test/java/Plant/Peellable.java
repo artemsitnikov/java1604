@@ -16,9 +16,9 @@ public interface Peellable {
         double peelledweight;
         
         peelledweight = Plant.weight - (Plant.weight * 0.05);
-    
-    return peelledweight;
+        System.out.println(peelledweight);
+        return peelledweight;
+        
 
-    
-}
+    }
 }

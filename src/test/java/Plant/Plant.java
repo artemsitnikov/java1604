@@ -11,7 +11,7 @@ package Plant;
  */
 public class Plant {//implements Peellable {
     
-    public double weight; // вес 
+    public static double weight; // вес 
 //!!когда делаю STATIC ошибка в интерфейсе пропадаетт, но некорректно работает ".weight" в vegetable & fruit
     public String color; // цвет
     public boolean maturity; // зрелость
