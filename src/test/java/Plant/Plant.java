@@ -16,7 +16,7 @@ public class Plant {//implements Peellable {
     public String color; // цвет
     public boolean maturity; // зрелость
     public boolean condition; // кондиция
-    public boolean peelled; // очищен или нет
+    public static boolean peelled; // очищен или нет
     public Plant(){
         
     }
