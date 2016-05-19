@@ -13,13 +13,13 @@ public interface Peellable {
 
     //
     public static double Peell() {
-//        double peelledweight;
+
         
-        Plant.weight = Plant.weight - (Plant.weight * 0.05);        
-//        peelledweight = Plant.weight - (Plant.weight * 0.05);
+        Plant.weight = Plant.weight * 0.95;        
+
         Plant.peelled = true;
         System.out.println(Plant.weight + " очищена? " + Plant.peelled);
-        return Plant.weight;
+        return Plant.weight;// Plant.peelled;
         
 
     }

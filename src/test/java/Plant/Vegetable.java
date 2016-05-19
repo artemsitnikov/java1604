@@ -9,6 +9,7 @@ package Plant;
  *
  * @author Lenovo
  */
+import java.util.Arrays;
 public class Vegetable extends Plant  implements Peellable {
     public Vegetable() {
         
@@ -22,13 +23,21 @@ public class Vegetable extends Plant  implements Peellable {
     }
     
     public static void main(String[] args) {
-        //Vegetable[] = {Potato};
-        Vegetable Potato =  new Vegetable(12.2, "white", true, true, false);
-        System.out.println("картоха нечищенная весит " + Potato.weight + Potato.color);
-        Vegetable Carrot =  new Vegetable(0.99, "orange", true, true, false);
 
-        System.out.println("морковка нечищенная весит " + Carrot.weight + Carrot.color);// + Potato.color + Potato.maturity + Potato.condition + Potato.peelled);
-        System.out.println(Potato.condition);//?че за хрень??
-        System.out.println(Potato.weight);//?че за хрень??
+        Vegetable potato = new Vegetable(2.00, "white", true, true, false);
+        System.out.println("картошка нечищенная весит " + potato.weight + " очищенa? " + potato.peelled);
+        System.out.println("картошка чищенная весит ");
+        Peellable.Peell();
+        
+        Vegetable carrot = new Vegetable(1.00, "orange", true, true, false);
+        System.out.println("морковь нечищенная весит " + carrot.weight + " очищена? " + carrot.peelled);
+        System.out.println("морковь чищенная весит ");
+        Peellable.Peell();   
+        
+        Vegetable[] trash = new Vegetable[4];
+        trash[1] = potato;
+        trash[2] = carrot;
+        System.out.println(trash[1]);// выводится хрень - по-ходу текст ссылки на объект
+
     }
 }
