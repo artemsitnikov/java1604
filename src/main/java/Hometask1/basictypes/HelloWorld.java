@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Plant;
+package hometask1.basictypes;
 
 /**
  *
  * @author Lenovo
  */
-public interface Peellable {
-    public double Peell();
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.print("Здравствуй, Миррр!!!");
+    }
 }

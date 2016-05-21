@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Hometask3;
+package hometask3.massives;
 
 /**
  *
