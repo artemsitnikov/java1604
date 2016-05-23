@@ -11,10 +11,10 @@ package interfaces;
 public class Vegetable extends Plant  implements Peellable {
     @Override
     public double Peell(){
-        Vegetable.weight = Vegetable.weight * 0.95;        
-        Vegetable.peelled = true;
-        System.out.println("очищенный овощ весит " + Vegetable.weight + ". очищен ли овощ? -" + Vegetable.peelled);
-        return Vegetable.weight;
+        weight = weight * 0.95;        
+        peelled = true;
+        System.out.println("очищенный овощ весит " + weight + ". очищен ли овощ? -" + peelled);
+        return weight;
     }    
     public Vegetable(double weight, String color, boolean maturity, boolean condition, boolean peelled) {
         this.weight = weight;
