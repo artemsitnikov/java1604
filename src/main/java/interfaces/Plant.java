@@ -11,16 +11,16 @@ package interfaces;
 public class Plant implements Peellable {
     @Override
     public double Peell(){
-        Plant.weight = Plant.weight * 0.95;        
-        Plant.peelled = true;
-        System.out.println(Plant.weight + " очищена? " + Plant.peelled);
-        return Plant.weight;
+        weight = weight * 0.95;        
+        peelled = true;
+        System.out.println(weight + " очищена? " + peelled);
+        return weight;
     }
-    public static double weight; // вес 
+    public double weight; // вес 
     public String color; // цвет
     public boolean maturity; // зрелость
     public boolean condition; // кондиция
-    public static boolean peelled; // очищен или нет
+    public boolean peelled; // очищен или нет
     
     public Plant(){
     }
