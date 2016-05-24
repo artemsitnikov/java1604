@@ -10,45 +10,43 @@ package Strings;
  * @author Lenovo
  */
 //import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
 public class StringLesson {
-    public static void main(String[] args) {
-        String e = "    thIS is A deMo of tHE geTcHars meThod.    ";
-        System.out.println(e);
-        String up = e.toUpperCase();
-        System.out.println(up);
-        String low = e.toLowerCase();
-        System.out.println(low);
-        String trm = up.trim();
-        System.out.println(trm);
-        StringBuffer tr = new StringBuffer(up);
-        tr.reverse();
-        System.out.println(tr);
-//        e.toUpperCase();
-//        System.out.println(e);
-//        int start = 10;
-//        int end = 14;
-//        char buf[] = new char[14 - 10];
-//        e.getChars(10, 14, buf, 0);
-//        System.out.println(buf);
-//        byte ascii[] = {60, 61, 62, 63, 64, 65};
-//        String w = new String(ascii);
-//        System.out.println(w);
-//        char trys[] = {'q', 'w', 'e', 'r', 't', 'y'};
-//        String s = new String(trys);
-//        String c = new String(trys,2,4);
-//        System.out.println(s);
-//        System.out.println(c);
-//        String b = "привет";
-//        System.out.println(b);
-//        String v = "hello";
-//        System.out.println(b.length());
-//        System.out.println("hello".length());
-//        char f[] = {'J', 'a', 'v', 'a'};
-//        String t1 = new String(f);
-//        String t2 = new String(t1);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str;
         
-//        System.out.println(t1);
-//        System.out.println(t2);
+        String e = "    thIS is A deMo of tHE geTcHars meThod.    ";
+        System.out.println("this is original line:");
+        System.out.println(e);
+        
+        do {
+            System.out.println("to change line to UpperCase - tap 'Upper'");
+            System.out.println("to change line to LowerCase - tap 'Lower'");
+            System.out.println("to trim line - tap 'Trim'");
+            System.out.println("to reverse line - tap 'Reverse'");
+            System.out.println("to exit application - tap 'Stop'");
+            str = br.readLine();
+            str = str.trim();
+            if(str.equals("Upper")){
+                String up = e.toUpperCase();
+                System.out.println(up);
+            }else if(str.equals("Lower")){
+                String low = e.toLowerCase();
+                System.out.println(low);
+            }else if(str.equals("Trim")){
+                String trm = e.trim();
+                System.out.println(trm);        
+            }else if(str.equals("Reverse")){
+                StringBuffer tr = new StringBuffer(e);
+                tr.reverse();
+                System.out.println(tr);
+            }
+        }while(!str.equals("Stop"));
+
         
     }
 
