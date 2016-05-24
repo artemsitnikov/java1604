@@ -9,17 +9,25 @@ package interfaces;
  *
  * @author Lenovo
  */
+
 import java.util.Arrays;
 public class Basket extends Vegetable {
-    
+    @Override
+    public String toString(){
+        return name + weight + color + maturity + condition + peelled;
+    }
+    public Basket(String name, double weight, String color, boolean maturity, boolean condition, boolean peelled) {
+        super(name, weight, color, maturity, condition, peelled);
+    }
     public static void main(String[] args) {
+        System.out.print(apple);// попробовать создать enum
 
-        Fruit[] basket = new Fruit[5];
-        basket [0] = apple;
+        Basket[] basket = new Basket[10];
+        System.out.println(Arrays.toString(basket));
+        //basket[0] = new ();
         }
 
-    public Basket(double weight, String color, boolean maturity, boolean condition, boolean peelled) {
-        super(weight, color, maturity, condition, peelled);
+
     }
-    }
+    
 
